@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="registos.css">
+    <title>Lista de Registos</title>
+</head>
+
+<body>
+    <h2>Inserção de Registos</h2>
+
+    <form id="formInserir" method="POST" onsubmit="inserirNovo(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label>Atividade Física:</label>
+        <select id="af" name="af">
+            <option value="">Selecione a Atividade Física...</option>
+        </select>
+
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade">
+
+        <input type="submit" value="Gravar">
+    </form>
+
+    <div class="footer">
+        <p id="status"></p>
+    </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="registos.js"></script>
+
+</html>

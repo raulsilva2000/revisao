@@ -1,0 +1,30 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-title{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid-item{
+    padding: 10px;
+    margin: 10px;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    color: white;
+    margin: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }

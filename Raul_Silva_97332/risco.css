@@ -1,0 +1,25 @@
+#ativadeFisicaOpcoes{
+    display: inline-flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+}
+
+.grid-item{
+    display: flex;
+    color: blue;
+    margin: 5px;
+}
+
+#valorNegrito{
+    margin: 0;
+    font-weight: bold;
+}
