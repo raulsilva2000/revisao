@@ -22,7 +22,7 @@ function loadTipos(familiaInput){
         $.ajax({
             url: 'tipos.php',
             type: 'POST',
-            data: { data: obj },
+            data: { data: JSON.stringify(obj) },
             success: function (response) {
                 const dataArray = JSON.parse(response);
                 $("div").remove(".grid-item"); //remover todos os div que tenham a classe grid-item

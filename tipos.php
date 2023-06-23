@@ -4,7 +4,7 @@ $username = "root";
 $password = "1234";
 $dbname = "ptw";
 
-$data = $_POST["data"];
+$data = json_decode($_POST["data"],true);
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
